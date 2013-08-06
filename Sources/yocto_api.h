@@ -101,7 +101,7 @@ class YFunction;
 typedef void (*yLogFunction)(const string& msg);
 
 /// prototype of the device arrival/update/removal callback
-typedef void (*yDeviceUpdateCallback)(YModule *module);
+typedef void (*yDeviceUpdateCallback)(YModule *module, void *opaque);
 
 /// prototype of the value calibration handlers
 typedef vector<double>  floatArr;
